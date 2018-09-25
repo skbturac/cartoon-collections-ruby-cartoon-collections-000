@@ -2,7 +2,7 @@ def roll_call_dwarves(array)                     # code an argument here
   # Your code here
   pack = []
   #pack = Array.new
-  array.each_with_index do |name, index|
+  array[0..array.lenth/2].each_with_index do |name, index|
   pack << "#{index+1} #{name}"
   #array << ("#{index+1}. #{name}")
 end
@@ -36,3 +36,11 @@ def find_the_cheese(strings)
     else
   nil
 end
+
+def words_with_b(array)
+  word_b = "b"
+  array.select do |word|
+    word.include?(word_b)
+  end
+end
+
