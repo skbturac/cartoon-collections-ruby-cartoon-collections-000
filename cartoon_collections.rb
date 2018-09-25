@@ -3,7 +3,7 @@ def roll_call_dwarves(array)                     # code an argument here
   pack = []
   #pack = Array.new
   array.each_with_index do |name, index|
-  pack << "#{index+1}: #{name}"
+  pack << "#{index+1} #{name}"
   #array << ("#{index+1}. #{name}")
 end
  puts pack
@@ -24,8 +24,15 @@ def long_planeteer_calls(calls)                  # code an argument here
   end
 end
 
-def find_the_cheese(string)                      # code an argument here
+def find_the_cheese(strings)                    
+  # code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+     strings.each do |item|
+  if cheese_types.include?(item)
+    return item
+  end
+  end
+    else
+  nil
 end
