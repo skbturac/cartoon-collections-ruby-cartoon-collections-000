@@ -2,7 +2,8 @@ def roll_call_dwarves(array)                     # code an argument here
   # Your code here
   pack = []
   #pack = Array.new
-  array[0..array.lenth/2].each_with_index do |name, index|
+  #array[0..array.lenth/2].each_with_index do |name, index|
+  array.each_with_index do |name, index|
   pack << "#{index+1} #{name}"
   #array << ("#{index+1}. #{name}")
 end
